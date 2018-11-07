@@ -23,10 +23,6 @@ $scroll-effect-offset: 80px;
 
 /* Colors */
 
-$color-primary: #c5202e;
-$color-secondary: #16496b;
-$color-black: #231f20;
-
 @function tint($color, $percentage) {
   @return mix(white, $color, $percentage);
 }
