@@ -112,17 +112,17 @@ html {
 /* Elements */
 
 a {
-  color: $color-black-tint-50;
+  color: $color-primary;
   text-decoration: none;
   &:visited {
-    color: $color-black-tint-50;
+    color: $color-primary;
   }
   &:active {
-    color: $color-primary;
+    color: $color-primary-shade-20;
   }
   @media (hover: hover) {
     &:hover {
-      color: $color-primary;
+      color: $color-primary-shade-20;
     }
   }
 }
@@ -265,7 +265,7 @@ input, select {
   padding: 0;
   background: transparent;
   border: none;
-  border-bottom: 1px solid $color-secondary;
+  border-bottom: 1px solid $color-primary;
   border-radius: 0;
   outline: none;
 
@@ -408,10 +408,6 @@ input, select {
       top: 17px;
       fill: $color-black;
     }
-  }
-
-  .form-field {
-    margin-bottom: $spacing-5;
   }
 
   .content-area {
