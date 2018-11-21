@@ -242,6 +242,22 @@ a {
       }
     }
 
+    &.button-user {
+      padding: 0;
+      width: 40px;
+      background: mix($color-primary, $color-secondary);
+      border-radius: 50%;
+
+      &:active {
+        opacity: 0.75;
+      }
+      @media (hover: hover) {
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
+
   }
 
 }
@@ -423,6 +439,10 @@ input, select {
       svg {
         left: 16px;
         top: 15px;
+      }
+
+      &.button-user {
+        width: 48px;
       }
     }
   }
