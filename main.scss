@@ -159,13 +159,11 @@ a {
     border: 1px solid $color-primary-tint-50;
     color: $color-primary;
     &:active {
-      border-color: $color-primary-shade-20;
       border-color: $color-primary;
       color: $color-primary-shade-20;
     }
     @media (hover: hover) {
       &:hover {
-        border-color: $color-primary-shade-20;
         border-color: $color-primary;
         color: $color-primary-shade-20;
       }
@@ -209,6 +207,13 @@ a {
           fill: $color-primary-shade-20;
         }
       }
+      @media (hover: hover) {
+        &:hover {
+          svg {
+            fill: $color-primary-shade-20;
+          }
+        }
+      }
     }
 
     &.button-secondary-inverted {
@@ -242,6 +247,11 @@ a {
       }
     }
 
+    &.button-icon-only {
+      padding: 0;
+      width: 40px;
+    }
+
     &.button-user {
       padding: 0;
       width: 40px;
@@ -258,6 +268,11 @@ a {
       }
     }
 
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.25;
   }
 
 }
@@ -295,7 +310,15 @@ input, select {
   label, .custom-select {
     display: block;
     text-align: left;
+  }
+  label {
     margin-bottom: 4px;
+  }
+  .error {
+    display: block;
+    margin-top: 4px;
+    font-size: $font-size-small;
+    color: $color-error;
   }
 }
 
@@ -444,6 +467,10 @@ input, select {
       &.button-user {
         width: 48px;
       }
+
+      &.button-icon-only {
+        width: 48px;
+      }
     }
   }
 
@@ -524,6 +551,9 @@ input, select {
 
   .left-aligned-large {
     text-align: left;
+  }
+  .right-aligned-large {
+    text-align: right;
   }
 
   .extra-padding-large-h {
