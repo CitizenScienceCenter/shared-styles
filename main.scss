@@ -341,6 +341,36 @@ input, select {
   }
 }
 
+.anchor-navigation {
+  padding-top: $spacing-3;
+  label {
+    display: block;
+    line-height: 1;
+    padding: $spacing-1 0;
+  }
+  ul {
+    li {
+      a {
+        font-size: $font-size-small;
+        color: $color-black-tint-50;
+        cursor: pointer;
+
+        line-height: 1;
+        padding: $spacing-1 0;
+
+        &:active {
+          color: $color-black;
+        }
+        @media (hover: hover) {
+          &:hover {
+            color: $color-black;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @media only screen and (min-width: $viewport-mobile-large) {
   html {
@@ -567,6 +597,33 @@ input, select {
     margin-top: 80px;
   }
 
+
+  .anchor-navigation {
+    .content-wrapper {
+      padding: 0;
+      max-width: none;
+      .row {
+        .col {
+          padding: 0 $spacing-4;
+        }
+      }
+    }
+
+    text-align: right;
+    label {
+      display: none;
+    }
+    ul {
+      display: inline-block;
+      li {
+        display: inline-block;
+        margin-right: $spacing-4;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: $viewport-xlarge) {
