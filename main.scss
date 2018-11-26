@@ -342,11 +342,13 @@ input, select {
 }
 
 .anchor-navigation {
-  padding-top: $spacing-3;
+  background: linear-gradient(to bottom right, rgba($color-gradient-start, 0.025), rgba($color-gradient-end, 0.025) );
+  padding: $spacing-2 0;
   label {
     display: block;
     line-height: 1;
     padding: $spacing-1 0;
+    font-weight: 700;
   }
   ul {
     li {
@@ -354,7 +356,6 @@ input, select {
         font-size: $font-size-small;
         color: $color-black-tint-50;
         cursor: pointer;
-
         line-height: 1;
         padding: $spacing-1 0;
 
@@ -444,8 +445,6 @@ input, select {
       margin-right: -$grid-gutter-tablet-portrait/2;
     }
   }
-
-  background: red;
 
   .col-tablet-portrait-12 {
     width: 100%;
@@ -599,17 +598,13 @@ input, select {
 
 
   .anchor-navigation {
+
     .content-wrapper {
       padding: 0;
       max-width: none;
-      .row {
-        .col {
-          padding: 0 $spacing-4;
-        }
-      }
     }
 
-    text-align: right;
+    text-align: center;
     label {
       display: none;
     }
