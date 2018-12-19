@@ -11,6 +11,7 @@ $viewport-xxlarge: 1420px;
 /* Easing */
 
 $transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+$transition-timing-function-symmetric: cubic-bezier(0.4, 0.0, 0.6, 1);
 $transition-duration-long: 300ms;
 $transition-duration-short: 150ms;
 
@@ -41,6 +42,7 @@ $color-secondary-tint-95: tint( $color-secondary, 95% );
 
 $color-black-tint-97: tint($color-black, 97%);
 $color-black-tint-90: tint($color-black, 90%);
+$color-black-tint-80: tint($color-black, 80%);
 $color-black-tint-50: tint($color-black, 50% );
 $color-black-tint-20: tint($color-black, 20%);
 $color-black-tint-10: tint($color-black, 10%);

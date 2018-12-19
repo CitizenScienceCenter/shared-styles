@@ -146,7 +146,7 @@ a {
     background-color: $color-primary;
     color: white;
     box-shadow: 0px 4px 8px -4px rgba($color-black,0.2);
-    &:active {
+    &:active, &:focus {
       background-color: $color-primary-shade-20;
     }
     @media (hover: hover) {
@@ -158,7 +158,7 @@ a {
   &.button-secondary {
     border: 1px solid $color-primary-tint-50;
     color: $color-primary;
-    &:active {
+    &:active, &:focus {
       border-color: $color-primary;
       color: $color-primary-shade-20;
     }
@@ -172,7 +172,7 @@ a {
     &.button-secondary-inverted {
       border-color: rgba( 255,255,255, 0.75 );
       color: white;
-      &:active {
+      &:active, &:focus {
         border-color: rgba( 255,255,255, 1);
       }
       @media (hover: hover) {
@@ -280,8 +280,8 @@ a {
 label {
   font-size: $font-size-small;
   line-height: 1.25;
-  font-weight: 400;
-  color: $color-black;
+  font-weight: 700;
+  color: $color-secondary;
 }
 
 input, select {
@@ -319,6 +319,16 @@ input, select {
     margin-top: 4px;
     font-size: $font-size-small;
     color: $color-error;
+  }
+
+  &.form-field-block {
+    display: block;
+  }
+  &.form-field-right-aligned {
+    text-align: right;
+    label {
+      text-align: right;
+    }
   }
 }
 
@@ -524,6 +534,10 @@ input, select {
       margin-left: -$grid-gutter-large/2;
       margin-right: -$grid-gutter-large/2;
     }
+  }
+
+  .row-large-right-aligned {
+    justify-content: flex-end;
   }
 
   .col-large-12 {
