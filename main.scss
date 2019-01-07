@@ -110,6 +110,9 @@ html {
 .overflow-hidden {
   overflow: hidden;
 }
+.margin-bottom {
+  margin-bottom: $spacing-4;
+}
 
 
 /* Elements */
@@ -447,6 +450,10 @@ input, select {
   .extra-margin-top {
     margin-top: $spacing-5;
   }
+  .margin-bottom {
+    margin-bottom: $spacing-5;
+  }
+
 
   input,select {
     height: 48px;
