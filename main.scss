@@ -290,25 +290,33 @@ label {
   color: $color-secondary;
 }
 
-input, select {
+input, select, textarea {
   font-family: $font-family;
   font-size: $font-size-normal;
   color: $color-black;
-  line-height: 1;
+  line-height: 1.5;
   appearance: none;
   height: 40px;
   width: 100%;
   padding: 0;
   background: transparent;
   border: none;
-  border-bottom: 1px solid $color-secondary;
+  border-bottom: 1px solid $color-primary;
   border-radius: 0;
   outline: none;
 
   &:focus {
     outline: none;
+    border-bottom: 1px solid $color-primary-shade-20;
   }
 }
+textarea {
+  resize: none;
+  padding-top: calc( ( 40px - #{$font-size-normal} * 1.5)/2 );
+  padding-bottom: calc( ( 40px - #{$font-size-normal} * 1.5)/2 );
+  overflow: hidden;
+}
+
 
 .form-field {
   display: inline-block;
@@ -455,8 +463,12 @@ input, select {
   }
 
 
-  input,select {
+  input, select, textarea {
     height: 48px;
+  }
+  textarea {
+    padding-top: calc( ( 48px - #{$font-size-normal} * 1.5)/2 );
+    padding-bottom: calc( ( 48px - #{$font-size-normal} * 1.5)/2 );
   }
 
   .custom-select {
