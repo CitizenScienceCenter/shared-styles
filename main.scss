@@ -187,6 +187,19 @@ a {
         }
       }
     }
+
+    &.button-secondary-naked {
+      border: none;
+
+      &:active {
+        opacity: 0.75;
+      }
+      @media (hover: hover) {
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
   }
 
   &.button-icon {
