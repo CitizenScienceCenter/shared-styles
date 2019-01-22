@@ -202,6 +202,24 @@ a {
     }
   }
 
+  &.button-user {
+    padding: 0;
+    width: 40px;
+    background: mix($color-primary, $color-secondary);
+    border-radius: 50%;
+    color: white;
+    font-weight: 700;
+
+    &:active {
+      opacity: 0.75;
+    }
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+
   &.button-icon {
     position: relative;
 
@@ -269,22 +287,6 @@ a {
     &.button-icon-only {
       padding: 0;
       width: 40px;
-    }
-
-    &.button-user {
-      padding: 0;
-      width: 40px;
-      background: mix($color-primary, $color-secondary);
-      border-radius: 50%;
-
-      &:active {
-        opacity: 0.75;
-      }
-      @media (hover: hover) {
-        &:hover {
-          opacity: 0.75;
-        }
-      }
     }
 
   }
@@ -500,15 +502,15 @@ textarea {
     white-space:nowrap;
     padding: 0 24px;
 
+    &.button-user {
+      width: 48px;
+    }
+
     &.button-icon {
       padding-left: 48px;
       svg {
         left: 16px;
         top: 15px;
-      }
-
-      &.button-user {
-        width: 48px;
       }
 
       &.button-icon-only {
