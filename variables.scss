@@ -43,7 +43,9 @@ $color-secondary-tint-95: tint( $color-secondary, 95% );
 $color-black-tint-97: tint($color-black, 97%);
 $color-black-tint-90: tint($color-black, 90%);
 $color-black-tint-80: tint($color-black, 80%);
-$color-black-tint-50: tint($color-black, 50% );
+$color-black-tint-50: tint($color-black, 50%);
+$color-black-tint-40: tint($color-black, 40%);
+$color-black-tint-30: tint($color-black, 30%);
 $color-black-tint-20: tint($color-black, 20%);
 $color-black-tint-10: tint($color-black, 10%);
 
@@ -68,6 +70,7 @@ $font-scale: 1.25;
   @return $value;
 }
 
+$font-size-mini: 1rem / pow($font-scale,2);
 $font-size-small: 1rem / $font-scale;
 $font-size-normal: 1rem;
 $font-size-medium: 1rem * $font-scale;
