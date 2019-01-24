@@ -208,7 +208,8 @@ a {
     background: mix($color-primary, $color-secondary);
     border-radius: 50%;
     color: white;
-    font-weight: 700;
+    font-weight: 400;
+    font-size: $font-size-normal;
 
     &:active {
       opacity: 0.75;
