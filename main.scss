@@ -632,8 +632,14 @@ textarea {
     }
   }
 
+  .col-xlarge-4 {
+    width: 33.333%;
+  }
   .col-xlarge-8 {
     width: 66.667%;
+  }
+  .col-xlarge-after-2 {
+    margin-right: 16.667%;
   }
 
 }
