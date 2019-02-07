@@ -46,6 +46,9 @@ html {
 .row-middle {
   align-items: center;
 }
+.row-wrapping {
+  margin-bottom: -$spacing-4;
+}
 .col {
   padding: 0 $grid-gutter-mobile/2;
   box-sizing: border-box;
@@ -525,6 +528,9 @@ textarea {
     padding: 0 $grid-margin-tablet-portrait;
   }
 
+  .row-wrapping {
+    margin-bottom: -$spacing-5;
+  }
   .col {
     padding: 0 $grid-gutter-tablet-portrait/2;
     &.col-wrapping {
@@ -703,6 +709,9 @@ textarea {
   }
   .col-large-before-4 {
     margin-left: 33.333%;
+  }
+  .col-large-before-6 {
+    margin-left: 50%;
   }
   .col-large-after-1 {
     margin-right: 8.333%;
