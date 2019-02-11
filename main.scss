@@ -19,6 +19,11 @@ html {
   }
 }
 
+*:focus, *::-moz-focus-inner {
+  outline: none;
+  border: none;
+}
+
 
 /* Grid Basics */
 
