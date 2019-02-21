@@ -359,12 +359,18 @@ textarea {
   label {
     margin-bottom: 4px;
   }
-  .error {
+  .message {
     display: block;
     margin-top: 4px;
     font-size: $font-size-small;
-    color: $color-error;
+    &.error {
+      color: $color-error;
+    }
+    &.info {
+      color: $color-info;
+    }
   }
+
 
   &.form-field-block {
     display: block;
@@ -463,6 +469,10 @@ textarea {
   select {
     padding-right: 32px;
     color: $color-black;
+
+    &.placeholder {
+      color: $color-black-tint-50;
+    }
   }
   svg {
     position: absolute;
