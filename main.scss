@@ -229,12 +229,15 @@ a {
     }
   }
 
+  &.button-normal-case {
+    text-transform: none;
+  }
+
   &.button-icon {
     position: relative;
 
     padding-left: 40px;
 
-    text-transform: none;
     svg {
       position: absolute;
       left: 11px;
