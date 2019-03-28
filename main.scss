@@ -464,6 +464,45 @@ textarea {
 
 }
 
+.form-message {
+  position: relative;
+  padding-left: calc( 40px + #{$spacing-2} );
+  margin: $spacing-3 0;
+
+  .icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $color-secondary;
+    position: absolute;
+    top: 0;
+    left: 0;
+    svg {
+      fill: white;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: $spacing-2;
+      height: $spacing-2;
+    }
+  }
+  .text {
+    font-weight: 700;
+    display: block;
+    padding-top: calc( (40px - 1.5rem)/2 );
+  }
+
+  &.form-message-error {
+    .icon {
+      background-color: $color-error;
+    }
+    .text {
+      color: $color-error;
+    }
+  }
+}
+
 .custom-select {
 
   display: inline-block;
@@ -627,6 +666,23 @@ textarea {
       }
     }
 
+  }
+
+  .form-message {
+    padding-left: calc( 48px + #{$spacing-2} );
+    margin: $spacing-4 0;
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      svg {
+        top: 16px;
+        left: 16px;
+      }
+    }
+    .text {
+      padding-top: calc( (48px - 1.5rem)/2 );
+    }
   }
 
   .custom-select {
