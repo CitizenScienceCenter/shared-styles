@@ -31,8 +31,9 @@ $scroll-effect-offset: 48px;
   @return mix(black, $color, $percentage);
 }
 
+$color-primary-shade-40: shade( $color-primary, 40% );
 $color-primary-shade-20: shade( $color-primary, 20% );
-$color-primary-shade-20: shade( $color-primary, 20% );
+$color-primary-shade-10: shade( $color-primary, 10% );
 $color-primary-tint-50: tint( $color-primary, 50% );
 $color-primary-tint-80: tint( $color-primary, 80% );
 $color-primary-tint-95: tint( $color-primary, 95% );
@@ -99,7 +100,7 @@ $grid-margin-mobile-large: $spacing-2;
 $grid-gutter-mobile-large: $spacing-4;
 $grid-margin-tablet-portrait: $spacing-7;
 $grid-gutter-tablet-portrait: $spacing-5;
-$grid-margin-large: $spacing-5;
-$grid-gutter-large: $spacing-5;
+$grid-margin-large: $spacing-3;
+$grid-gutter-large: $spacing-3;
 $grid-margin-xlarge: $spacing-5;
 $grid-gutter-xlarge: $spacing-5;
