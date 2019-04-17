@@ -200,11 +200,11 @@ a {
       border: none;
 
       &:active {
-        opacity: 0.75;
+        color: $color-primary-shade-20;
       }
       @media (hover: hover) {
         &:hover {
-          opacity: 0.75;
+          color: $color-primary-shade-20;
         }
       }
     }
@@ -287,11 +287,15 @@ a {
       border: none;
 
       &:active {
-        opacity: 0.75;
+        svg {
+          fill: $color-primary-shade-20;
+        }
       }
       @media (hover: hover) {
         &:hover {
-          opacity: 0.75;
+          svg {
+            fill: $color-primary-shade-20;
+          }
         }
       }
     }
