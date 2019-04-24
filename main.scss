@@ -406,7 +406,7 @@ textarea {
       padding-left: calc( 40px + #{$spacing-1} );
 
       cursor: pointer;
-
+      transition: color $transition-duration-short $transition-timing-function;
 
       input {
         display:none;
@@ -420,6 +420,7 @@ textarea {
         left: 8px;
         background-color: $color-black-tint-90;
         border-radius: $border-radius;
+        transition: background-color $transition-duration-short $transition-timing-function;
 
         &.radio {
           border-radius: 50%;
