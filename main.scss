@@ -524,6 +524,12 @@ textarea {
 
     &.placeholder {
       color: $color-black-tint-50;
+
+      &:focus {
+        option {
+          color: $color-black;
+        }
+      }
     }
   }
   svg {
