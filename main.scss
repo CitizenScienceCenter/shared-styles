@@ -525,8 +525,10 @@ textarea {
     &.placeholder {
       color: $color-black-tint-50;
 
-      option {
-        color: $color-black;
+      &:focus {
+        option {
+          color: $color-black;
+        }
       }
     }
   }
