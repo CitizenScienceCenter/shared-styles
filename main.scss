@@ -188,25 +188,18 @@ a {
       color: white;
       &:active, &:focus {
         border-color: rgba( 255,255,255, 1);
+        color: rgba( white, 0.75 );
       }
       @media (hover: hover) {
         &:hover {
           border-color: rgba( 255,255,255, 1);
+          color: rgba( white, 0.75 );
         }
       }
     }
 
     &.button-secondary-naked {
       border: none;
-
-      &:active {
-        color: $color-primary-shade-20;
-      }
-      @media (hover: hover) {
-        &:hover {
-          color: $color-primary-shade-20;
-        }
-      }
     }
   }
 
@@ -219,7 +212,7 @@ a {
     font-weight: 400;
     font-size: $font-size-normal;
 
-    &:active {
+    &:active, &:focus {
       opacity: 0.75;
     }
     @media (hover: hover) {
@@ -251,7 +244,7 @@ a {
       svg {
         fill: $color-primary;
       }
-      &:active {
+      &:active, &:focus  {
         svg {
           fill: $color-primary-shade-20;
         }
@@ -269,15 +262,15 @@ a {
       svg {
         fill: white;
       }
-      &:active {
+      &:active, &:focus  {
         svg {
-          fill: white;
+          fill: rgba( white, 0.75 );
         }
       }
       @media (hover: hover) {
         &:hover {
           svg {
-            fill: white;
+            fill: rgba( white, 0.75 );
           }
         }
       }
@@ -285,19 +278,6 @@ a {
 
     &.button-secondary-naked {
       border: none;
-
-      &:active {
-        svg {
-          fill: $color-primary-shade-20;
-        }
-      }
-      @media (hover: hover) {
-        &:hover {
-          svg {
-            fill: $color-primary-shade-20;
-          }
-        }
-      }
     }
 
     &.button-icon-only {
