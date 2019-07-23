@@ -309,7 +309,7 @@ label {
   color: $color-secondary;
 }
 
-input:not([type="checkbox"]):not([type="radio"]), select, textarea {
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, textarea {
   font-family: $font-family;
   font-size: $font-size-normal;
   color: $color-black;
@@ -626,7 +626,7 @@ textarea {
   }
 
 
-  input:not([type=checkbox]):not([type=radio]), select, textarea {
+  input:not([type=checkbox]):not([type=radio]):not([type=range]), select, textarea {
     height: 48px;
   }
   textarea {
