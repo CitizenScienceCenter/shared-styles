@@ -543,11 +543,7 @@ textarea {
       margin-right: -$grid-gutter-mobile-large/2;
     }
   }
-  .row {
-    &.row-reverse-large {
-      flex-direction: row-reverse;
-    }
-  }
+
   .col-mobile-large-12 {
     width: 100%;
   }
@@ -583,7 +579,11 @@ textarea {
   .content-wrapper {
     padding: 0 $grid-margin-tablet-portrait;
   }
-
+  .row {
+    &.row-reverse-tablet-portrait {
+      flex-direction: row-reverse;
+    }
+  }
   .row-wrapping {
     margin-bottom: -$spacing-5;
   }
@@ -725,6 +725,12 @@ textarea {
   .content-wrapper {
     padding: 0 $grid-margin-large;
   }
+  .row {
+    &.row-reverse-large {
+      flex-direction: row-reverse;
+    }
+  }
+
   .col {
     padding: 0 $grid-gutter-large/2;
 
