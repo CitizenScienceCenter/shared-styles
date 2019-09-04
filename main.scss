@@ -497,6 +497,14 @@ textarea {
       color: $color-error;
     }
   }
+  &.form-message-success {
+    .icon {
+      background-color: $color-success;
+    }
+    .text {
+      color: $color-success;
+    }
+  }
 }
 
 .custom-select {
