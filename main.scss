@@ -461,19 +461,16 @@ textarea {
 }
 
 .form-message {
-  position: relative;
-  padding-left: calc( 40px + #{$spacing-2} );
-  margin: $spacing-3 0;
+  font-size: 0;
+  display: flex;
 
   .icon {
-    display: inline-block;
-    width: 40px;
+    position: relative;
     height: 40px;
+    min-width: 40px;
     border-radius: 50%;
     background-color: $color-secondary;
-    position: absolute;
-    top: 0;
-    left: 0;
+
     svg {
       fill: white;
       position: absolute;
@@ -484,11 +481,15 @@ textarea {
     }
   }
   .text {
+    font-size: $font-size-normal;
     font-weight: 700;
-    display: block;
     padding-top: calc( (40px - 1.5rem)/2 );
+    padding-left: $spacing-2;
   }
 
+  &.form-message-centered {
+    justify-content: center;
+  }
   &.form-message-error {
     .icon {
       background-color: $color-error;
@@ -688,8 +689,6 @@ textarea {
   }
 
   .form-message {
-    padding-left: calc( 48px + #{$spacing-2} );
-    margin: $spacing-4 0;
 
     .icon {
       width: 48px;
