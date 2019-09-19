@@ -76,6 +76,7 @@ $font-scale: 1.25;
   @return $value;
 }
 
+$font-size-tiny: 1rem / pow($font-scale,3);
 $font-size-mini: 1rem / pow($font-scale,2);
 $font-size-small: 1rem / $font-scale;
 $font-size-normal: 1rem;
