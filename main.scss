@@ -10,7 +10,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 17px;
 
   body {
     font-family: $font-family;
@@ -539,8 +539,9 @@ textarea {
 
 
 @media only screen and (min-width: $viewport-mobile-large) {
+
   html {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .content-wrapper {
@@ -585,7 +586,7 @@ textarea {
 @media only screen and (min-width: $viewport-tablet-portrait) {
 
   html {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .content-wrapper {
@@ -740,6 +741,9 @@ textarea {
 
 @media only screen and (min-width: $viewport-large) {
 
+  html {
+    font-size: 20px;
+  }
 
   .content-wrapper {
     padding: 0 $grid-margin-large;
