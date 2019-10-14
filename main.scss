@@ -334,12 +334,20 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, te
     outline: none;
     border-bottom: 1px solid $color-primary-shade-20;
   }
+
+  &::placeholder {
+    color: $color-black-tint-50;
+  }
 }
 textarea {
   resize: none;
   padding-top: calc( ( 40px - #{$font-size-normal} * 1.5)/2 );
   padding-bottom: calc( ( 40px - #{$font-size-normal} * 1.5)/2 );
   overflow: hidden;
+
+  &::placeholder {
+    color: $color-black-tint-50;
+  }
 }
 
 .form-field {
