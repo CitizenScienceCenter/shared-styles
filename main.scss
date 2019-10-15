@@ -407,6 +407,11 @@ textarea {
       cursor: pointer;
       transition: color $transition-duration-short $transition-timing-function;
 
+      &.disabled {
+        opacity: 0.25;
+        pointer-events: none;
+      }
+
       input {
         display:none;
       }
