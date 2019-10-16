@@ -299,6 +299,10 @@ a {
   }
 
 }
+a.button {
+  display: inline-block;
+  line-height: 40px;
+}
 
 .button-group {
   margin: -$spacing-1;
@@ -751,6 +755,9 @@ textarea {
         width: 48px;
       }
     }
+  }
+  a.button {
+    line-height: 48px;
   }
 
 }
