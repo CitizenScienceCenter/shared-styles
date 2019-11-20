@@ -175,7 +175,8 @@ a {
       }
     }
   }
-  &.button-secondary {
+  &.button-secondary,
+  &.button-toggle {
     border: 1px solid $color-primary-tint-50;
     color: $color-primary;
     &:active, &:focus {
@@ -186,6 +187,14 @@ a {
       &:hover {
         border-color: $color-primary;
         color: $color-primary-shade-20;
+      }
+    }
+
+    &.button-toggle {
+      &.selected {
+        border-width: 4px;
+        background-color: rgba( $color-primary, 0.1 );
+        border-color: $color-primary;
       }
     }
 
@@ -246,7 +255,21 @@ a {
       fill: white;
     }
 
-    &.button-secondary {
+    &.button-toggle {
+      svg {
+        transition: all $transition-duration-short $transition-timing-function;
+      }
+      &.selected {
+        padding-left: 37px;
+        svg {
+          left: 8px;
+          top: 8px;
+        }
+      }
+    }
+
+    &.button-secondary,
+    &.button-toggle {
       svg {
         fill: $color-primary;
       }
@@ -752,6 +775,15 @@ textarea {
       svg {
         left: 15px;
         top: 15px;
+      }
+      &.button-toggle {
+        &.selected {
+          padding-left: 45px;
+          svg {
+            left: 12px;
+            top: 12px;
+          }
+        }
       }
 
       &.button-icon-only {
