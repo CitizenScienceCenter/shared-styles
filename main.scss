@@ -367,6 +367,8 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, te
   }
 }
 textarea {
+  height: auto;
+
   resize: none;
   padding-top: calc( ( 40px - #{$font-size-normal} * 1.5)/2 );
   padding-bottom: calc( ( 40px - #{$font-size-normal} * 1.5)/2 );
@@ -701,6 +703,7 @@ textarea {
     height: 48px;
   }
   textarea {
+    height: auto;
     padding-top: calc( ( 48px - #{$font-size-normal} * 1.5)/2 );
     padding-bottom: calc( ( 48px - #{$font-size-normal} * 1.5)/2 );
   }
