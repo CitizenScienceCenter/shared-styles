@@ -340,6 +340,9 @@ label {
   line-height: 1.25;
   font-weight: 700;
   color: $color-secondary;
+  .regular {
+    font-weight: 400;
+  }
 }
 
 input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, textarea {
