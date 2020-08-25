@@ -47,7 +47,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  position: relative;
+  position: relative;  
 }
 .row-centered {
   justify-content: center;
@@ -941,7 +941,9 @@ textarea {
       margin-right: -$grid-gutter-xlarge/2;
     }
   }
-
+  .col-xlarge-3 {
+    width: 25%;
+  }
   .col-xlarge-4 {
     width: 33.333%;
   }
