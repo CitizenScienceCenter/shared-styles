@@ -52,6 +52,10 @@ html {
 .row-centered {
   justify-content: center;
 }
+.row-end {
+  justify-content: flex-end;
+  text-align: end;
+}
 .row-middle {
   align-items: center;
 }
@@ -64,7 +68,7 @@ html {
   width: 100%;
 
   &.col-wrapping {
-    margin-bottom: $spacing-4;
+    margin-bottom: $spacing-2;
     &.col-no-bottom-margin {
       margin-bottom: 0;
     }
@@ -958,5 +962,19 @@ textarea {
   }
   .col-xlarge-after-2 {
     margin-right: 16.667%;
+  }
+}
+
+@media only screen and (min-width: $viewport-xxlarge) {
+  .content-wrapper {
+    padding: 0 $grid-margin-xxlarge;
+  }
+  .col {
+    padding: 0 $grid-gutter-xxlarge/2;
+
+    .row {
+      margin-left: -$grid-gutter-xxlarge/2;
+      margin-right: -$grid-gutter-xxlarge/2;
+    }
   }
 }
