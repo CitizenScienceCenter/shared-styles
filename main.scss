@@ -116,9 +116,6 @@ html {
 .extra-margin-top {
   margin-top: $spacing-4;
 }
-.extra-margin-top-2 {
-  margin-top: $spacing-2;
-}
 .extra-margin-bottom {
   margin-bottom: $spacing-4;
 }
@@ -163,7 +160,7 @@ a {
 
   transition: all $transition-duration-short $transition-timing-function;
 
-  &.button-primary {
+  &.button-primary-main {
     font-weight: 700;
     background-color: $color-primary;
     color: white;
@@ -673,6 +670,9 @@ textarea {
       &.col-tablet-portrait-no-bottom-margin {
         margin-bottom: 0;
       }
+      &.col-tablet-portrait-bottom-margin-2 {
+        margin-bottom: $spacing-2;
+      }
     }
 
     .row {
@@ -974,6 +974,9 @@ textarea {
   }
   .col-xlarge-8 {
     width: 66.667%;
+  }
+  .col-xlarge-9 {
+    width: 75%;
   }
   .col-xlarge-after-2 {
     margin-right: 16.667%;
