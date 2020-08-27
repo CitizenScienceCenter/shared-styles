@@ -116,6 +116,9 @@ html {
 .extra-margin-top {
   margin-top: $spacing-4;
 }
+.extra-margin-top-2 {
+  margin-top: $spacing-2;
+}
 .extra-margin-bottom {
   margin-bottom: $spacing-4;
 }
@@ -127,9 +130,6 @@ html {
 }
 .overflow-hidden {
   overflow: hidden;
-}
-.margin-bottom {
-  margin-bottom: $spacing-4;
 }
 
 /* Elements */
@@ -175,6 +175,21 @@ a {
     @media (hover: hover) {
       &:hover {
         background-color: $color-primary-shade-20;
+      }
+    }
+  }
+  &.button-secondary-main {
+    font-weight: 700;
+    background-color: $color-secondary;
+    color: white;
+    box-shadow: 0px 4px 8px -4px rgba($color-black, 0.2);
+    &:active,
+    &:focus {
+      background-color: $color-secondary-shade-20;
+    }
+    @media (hover: hover) {
+      &:hover {
+        background-color: $color-secondary-shade-20;
       }
     }
   }
