@@ -991,11 +991,11 @@ textarea {
     padding: 0 $grid-margin-xxlarge;
   }
   .col {
-    padding: 0 $grid-gutter-large/2;
+    padding: 0 $grid-gutter-xxlarge/2;
 
     .row {
-      margin-left: -$grid-gutter-xlarge/2;
-      margin-right: -$grid-gutter-xlarge/2;
+      margin-left: -$grid-gutter-xxlarge/2;
+      margin-right: -$grid-gutter-xxlarge/2;
     }
   }
 }
