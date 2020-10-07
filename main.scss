@@ -47,7 +47,11 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  position: relative;  
+  position: relative; 
+  &.ph-mv {
+    padding: 0 $spacing-1;
+    margin: $spacing-2 0;
+  } 
 }
 .row-centered {
   justify-content: center;
@@ -825,6 +829,10 @@ textarea {
     padding: 0 $grid-margin-large;
   }
   .row {
+    &.ph-mv {
+      padding: 0 $spacing-3;
+      margin: $spacing-3 0;
+    }
     &.row-reverse-large {
       flex-direction: row-reverse;
     }
@@ -989,6 +997,11 @@ textarea {
 @media only screen and (min-width: $viewport-xxlarge) {
   .content-wrapper {
     padding: 0 $grid-margin-xxlarge;
+  }
+  .row {
+    &.ph-mv {
+      padding: 0 $spacing-4;
+    }
   }
   .col {
     padding: 0 $grid-gutter-xxlarge/2;
