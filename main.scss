@@ -877,14 +877,7 @@ textarea {
       margin-left: -$grid-gutter-large/2;
       margin-right: -$grid-gutter-large/2;
     }
-  }
-
-  .row-large-right-aligned {
-    justify-content: flex-end;
-  }
-  .row-large-left-aligned {
-    justify-content: flex-start;
-  }
+  }  
 
   .col-large-12 {
     width: 100%;
@@ -949,6 +942,13 @@ textarea {
   }
   .right-aligned-large {
     text-align: right;
+  }
+
+  .row-large-right-aligned {
+    justify-content: flex-end;
+  }
+  .row-large-left-aligned {
+    justify-content: flex-start;
   }
 
   .extra-padding-large-h {
