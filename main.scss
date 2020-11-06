@@ -53,7 +53,7 @@ html {
     margin: $spacing-2 0;
   }
 }
-.row-full-width{
+.row-full-width {
   width: 100%;
 }
 .row-centered {
@@ -283,13 +283,13 @@ a {
 
     padding-left: 40px;
 
-    svg {
+    svg,
+    i {
       position: absolute;
       left: 11px;
-      top: 11px;
+      top: 10px;
       width: 16px;
       height: 16px;
-      fill: white;
     }
 
     &.button-toggle {
@@ -821,10 +821,10 @@ textarea {
     }
 
     &.button-icon {
-      padding-left: 45px;
-      svg {
+      padding-left: 40px;
+      svg,
+      i {
         left: 15px;
-        top: 15px;
       }
       &.button-toggle {
         &.selected {
@@ -877,7 +877,7 @@ textarea {
       margin-left: -$grid-gutter-large/2;
       margin-right: -$grid-gutter-large/2;
     }
-  }  
+  }
 
   .col-large-12 {
     width: 100%;
